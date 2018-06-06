@@ -6,21 +6,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class ChooseLanguage extends AppCompatActivity{
-
-
+public class MainLanguage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.language_main);
-        final Button startButton = findViewById(R.id.start_button);
-        startButton.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_main_language);
+        final Button englishOption= findViewById(R.id.english_option);
+        englishOption.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent i = new Intent(getApplicationContext(),AddContact.class);
+                startActivity(i);
             }
         });
     }
+
+
 
 }

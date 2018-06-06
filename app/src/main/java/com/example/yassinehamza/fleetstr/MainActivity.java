@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     startButton.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Intent  i = new Intent(getApplicationContext(),ChooseLanguage.class);
+            Intent  i = new Intent(getApplicationContext(),MainLanguage.class);
             startActivity(i);
         }
     });
